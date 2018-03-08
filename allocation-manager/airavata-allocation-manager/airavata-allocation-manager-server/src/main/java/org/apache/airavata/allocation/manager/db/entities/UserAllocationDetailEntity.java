@@ -30,7 +30,6 @@ public class UserAllocationDetailEntity implements Serializable {
 	private BigInteger diskUsageRangePerJob;
 
 	@Lob
-	@Column(name="DOCUMENTS")
 	private byte[] documents;
 
 	@Column(name="END_DATE")
@@ -41,7 +40,6 @@ public class UserAllocationDetailEntity implements Serializable {
 	private String fieldOfScience;
 
 	@Lob
-	@Column(name="KEYWORDS")
 	private String keywords;
 
 	@Column(name="MAX_MEMORY_PER_CPU")
@@ -71,11 +69,9 @@ public class UserAllocationDetailEntity implements Serializable {
 	@Column(name="START_DATE")
 	private BigInteger startDate;
 
-	@Column(name="STATUS")
 	private String status;
 
 	@Lob
-	@Column(name="TITLE")
 	private String title;
 
 	@Column(name="TYPE_OF_ALLOCATION")
@@ -84,7 +80,6 @@ public class UserAllocationDetailEntity implements Serializable {
 	@Column(name="TYPICAL_SU_PER_JOB")
 	private BigInteger typicalSuPerJob;
 
-	@Column(name="USERNAME")
 	private String username;
 
 	public UserAllocationDetailEntity() {

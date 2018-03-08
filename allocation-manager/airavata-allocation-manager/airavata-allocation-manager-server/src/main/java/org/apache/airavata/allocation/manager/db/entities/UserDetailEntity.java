@@ -15,18 +15,15 @@ public class UserDetailEntity implements Serializable {
 	private static final long serialVersionUID = 1L;
 
 	@Id
-	@Column(name="USERNAME")
 	private String username;
 
 	@Lob
-	@Column(name="EMAIL")
 	private String email;
 
 	@Lob
 	@Column(name="FULL_NAME")
 	private String fullName;
 
-	@Column(name="PASSWORD")
 	private String password;
 
 	@Column(name="USER_TYPE")
